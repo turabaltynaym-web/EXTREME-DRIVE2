@@ -1,6 +1,3 @@
-
-/* GENERAL SETTINGS */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -36,8 +33,6 @@ img {
     max-width: 100%;
     display: block;
 }
-
-/* HEADER */
 
 .header {
     width: 100%;
@@ -120,8 +115,6 @@ img {
     width: 100%;
 }
 
-/* HERO */
-
 .hero {
     min-height: 38rem;
     position: relative;
@@ -163,9 +156,6 @@ img {
     margin-bottom: 2rem;
     color: #FFFFFF;
 }
-
-/* GENERAL SECTIONS */
-
 .section {
     width: 89%;
     max-width: 90rem;
@@ -177,8 +167,6 @@ img {
     font-size: clamp(1.7rem, 4vw, 2.5rem);
     margin-bottom: 2rem;
 }
-
-/* PROGRAMS */
 
 .programs-grid,
 .fleet-grid,
@@ -212,9 +200,6 @@ img {
     color: #C5C5C5;
     font-size: 0.9rem;
 }
-
-/* SAFETY */
-
 .safety {
     background:
         repeating-linear-gradient(
@@ -234,9 +219,6 @@ img {
     max-width: 45rem;
     color: #D0D0D0;
 }
-
-/* REGISTRATION FORM */
-
 .registration-form {
     display: flex;
     flex-direction: column;
@@ -303,8 +285,6 @@ img {
     margin-top: 1rem;
 }
 
-/* FOOTER */
-
 .footer {
     padding: 3rem 5.5% 1.5rem;
     background:
@@ -369,8 +349,6 @@ img {
     background: transparent;
     color: #FFFFFF;
 }
-
-/* LIGHT THEME */
 
 body.light-theme {
     background: #F5F5F5;
@@ -452,8 +430,6 @@ body.light-theme {
         align-items: center;
     }
 }
-
-/* SMALL MOBILE SCREENS */
 
 @media (max-width: 480px) {
     .header {
