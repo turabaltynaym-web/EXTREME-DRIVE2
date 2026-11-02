@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="APEX DRIVE — high-performance driving and safety training.">
+    <title>EXTREME DRIVE | Extreme Driving School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">EXTREME DRIVE</a>
+        <button class="menu-toggle" type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+            <img src="images/burger-dark.svg" alt="">
+        </button>
+        <nav class="navigation">
+            <a href="#programs">Programs</a>
+            <a href="#fleet">Fleet</a>
+            <a href="#instructors">Instructors</a>
+        </nav>
+        <section class="header-contact">
+            <a href="mailto:extremedrive@example.com">
+                extremedrive@example.com
+            </a>
+            <a href="#registration" class="header-button">
+                Sign Up for the Race Track
+            </a>
+        </section>
+    </header>
+    <main>
+        <section class="hero" id="home">
+            <img
+                src="images/car.webp"
+                alt="Sports car on a racing track"
+                class="hero-image">
+
+            <article class="hero-content">
+                <h1>Learn to Fully Control the Car in Any Conditions</h1>
+                <a href="#programs" class="hero-button">
+                    Choose a Course
+                </a>
+            </article>
+        </section>
+        <section class="programs section" id="programs">
+            <h2>Our Driving Programs</h2>
+            <section class="programs-grid">
+                <article class="program-card">
+                    <h3>Defensive Driving Basics</h3>
+                    <p>Practical hours: 8 hours</p>
+                </article>
+                <article class="program-card">
+                    <h3>Winter Drift</h3>
+                    <p>Practical hours: 7 hours</p>
+                </article>
+                <article class="program-card">
+                    <h3>Sports Track</h3>
+                    <p>Practical hours: 10 hours</p>
+                </article>
+            </section>
+        </section>
+        <section class="fleet section" id="fleet">
+            <h2>Our Fleet</h2>
+            <section class="fleet-grid">
+                <article class="fleet-card">
+                    <h3>Training Cars</h3>
+                </article>
+                <article class="fleet-card">
+                    <h3>Sports Cars</h3>
+                </article>
+                <article class="fleet-card">
+                    <h3>Track Cars</h3>
+                </article>
+            </section>
+        </section>
+        <section class="instructors section" id="instructors">
+            <h2>Our Instructors</h2>
+            <section class="instructors-grid">
+                <article class="instructor-card">
+                    <h3>Driving Instructor</h3>
+                </article>
+                <article class="instructor-card">
+                    <h3>Drift Instructor</h3>
+                </article>
+                <article class="instructor-card">
+                    <h3>Track Instructor</h3>
+                </article>
+            </section>
+        </section>
+        <section class="safety section" id="safety">
+            <h2>Safety First</h2>
+            <p>
+                Safety is an essential part of every driving session.
+                Follow the instructor's directions and all track rules.
+            </p>
+        </section>
+        <section class="registration section" id="registration">
+            <h2>Registration</h2>
+            <form class="registration-form">
+                <label for="full-name">Driver's Full Name</label>
+                <input
+                    type="text"
+                    id="full-name"
+                    name="full-name"
+                    placeholder="Enter your full name"
+                    required>
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required>
+                <label for="experience">
+                    Driving Experience (in years)
+                </label>
+                <input
+                    type="number"
+                    id="experience"
+                    name="experience"
+                    min="0"
+                    placeholder="Enter your experience"
+                    required>
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+7 ..."
+                    required>
+                <fieldset>
+                    <legend>Choose Your Vehicle</legend>
+                    <label class="radio-label">
+                        <input
+                            type="radio"
+                            name="vehicle"
+                            value="own"
+                            required>
+                        Own Car
+                    </label>
+                    <label class="radio-label">
+                        <input
+                            type="radio"
+                            name="vehicle"
+                            value="school-car">
+                        School Car
+                    </label>
+                </fieldset>
+                <button type="submit" class="form-button">
+                    Register
+                </button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer-content">
+            <article class="footer-brand">
+                <a href="#home" class="logo">APEX DRIVE</a>
+                <p>Learn to control the car in any conditions.</p>
+            </article>
+            <nav class="footer-links">
+                <h3>Useful Links</h3>
+                <a href="#safety">Safety Regulations</a>
+                <a href="https://www.fia.com/" target="_blank"
+                   rel="noopener noreferrer">
+                    FIA — International Automobile Federation
+                </a>
+                <a href="https://www.fia.com/fia-members" target="_blank"
+                   rel="noopener noreferrer">
+                    FIA Member Clubs
+                </a>
+            </nav>
+            <section class="footer-contact">
+                <h3>Contact</h3>
+                <a href="mailto:extremerive@example.com">
+                    extremedrive@example.com
+                </a>
+            </section>
+        </section>
+        <section class="footer-bottom">
+            <p class="legal-info">
+                © 2026 EXTREME DRIVE. All rights reserved.
+            </p>
+            <button class="theme-toggle" type="button">
+                Switch Theme
+            </button>
+        </section>
+    </footer>
+    <script>
+        const menuButton = document.querySelector(".menu-toggle");
+        const navigation = document.querySelector(".navigation");
+        const themeButton = document.querySelector(".theme-toggle");
+        menuButton.addEventListener("click", function () {
+            navigation.classList.toggle("navigation-open");
+            const isOpen =
+                navigation.classList.contains("navigation-open");
+
+            menuButton.setAttribute("aria-expanded", isOpen);
+        });
+        themeButton.addEventListener("click", function () {
+            document.body.classList.toggle("light-theme");
+            const lightTheme =
+                document.body.classList.contains("light-theme");
+
+            const burgerImage = menuButton.querySelector("img");
+            burgerImage.src = lightTheme
+                ? "images/burger-light.svg"
+                : "images/burger-dark.svg";
+        });
+    </script>
+</body>
+</html>
